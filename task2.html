@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="task2.css">
+</head>
+<body>
+
+<h1>Responsive Image Gallery</h1>
+
+<div class="filters">
+<button onclick="filterImages('all')">All</button>
+<button onclick="filterImages('nature')">Nature</button>
+<button onclick="filterImages('city')">City</button>
+<button onclick="filterImages('animal')">Animals</button>
+</div>
+
+<div class="gallery">
+
+<div class="image nature">
+<img src="https://picsum.photos/id/1015/600/400" onclick="openImage(this.src)">
+</div>
+
+<div class="image city">
+<img src="https://picsum.photos/id/1011/600/400" onclick="openImage(this.src)">
+</div>
+
+<div class="image animal">
+<img src="https://picsum.photos/id/1025/600/400" onclick="openImage(this.src)">
+</div>
+
+<div class="image nature">
+<img src="https://picsum.photos/id/1039/600/400" onclick="openImage(this.src)">
+</div>
+
+<div class="image city">
+<img src="https://picsum.photos/id/1043/600/400" onclick="openImage(this.src)">
+</div>
+
+<div class="image animal">
+<img src="https://picsum.photos/id/1074/600/400" onclick="openImage(this.src)">
+</div>
+
+</div>
+
+<div id="viewer">
+
+<span id="close" onclick="closeImage()">&times;</span>
+
+<button class="prev" onclick="previous()">❮</button>
+
+<img id="bigImage">
+
+<button class="next" onclick="next()">❯</button>
+
+</div>
+
+<script src="task2.js"></script>
+
+</body>
+</html>
